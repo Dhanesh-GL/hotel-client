@@ -85,10 +85,10 @@ const ListingCard = ({
           <Avatar
             aria-label="recipe"
             src={
-              creator.profileImagePath?.startsWith("public")
+              creator?.profileImagePath?.startsWith("public")
                 ? `${
                     import.meta.env.VITE_SERVER_URL
-                  }/${creator.profileImagePath.replace("public", "")}`
+                  }/${creator?.profileImagePath?.replace("public", "")}`
                 : creator?.profileImagePath
             }
           ></Avatar>
